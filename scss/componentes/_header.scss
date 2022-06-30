@@ -27,10 +27,41 @@
         }
 
     }
+
     #heartagram {
         width: 150px;
         height: 105px;
-    
+
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 15px;
+
+        div {
+            margin: 0 auto;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                text-transform: uppercase;
+                flex-direction: column;
+                align-items: stretch;
+
+                li {
+                    padding: 1%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
     }
 
 }

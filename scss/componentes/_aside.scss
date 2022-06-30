@@ -1,0 +1,24 @@
+.aside {
+    grid-area: aside;
+    margin-top: 22%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    #sinLista {
+        display: none;
+    }
+}
+@media screen and (max-width: 930px){
+    #sinLista {
+        display: none;
+    }
+}
+@media screen and (max-width: 1028px) and (min-width: 931px) {
+    #conLista {
+        display: none
+    }
+
+    #sinLista {
+        display: flex;
+    }
+}

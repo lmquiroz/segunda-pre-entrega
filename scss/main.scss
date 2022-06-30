@@ -11,23 +11,24 @@
 /* componentes */
 @import './componentes/body';
 @import './componentes/header';
+@import './componentes/aside';
 @import './componentes/footer';
 
 /* paginas */
 @import './secciones/index';
 
-body {
+/* body {
     color: #8F8363;
     background-color: #050504;
     font-family: 'Roboto Flex', sans-serif;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
     color: #8F8363;
-}
+} */
 
-.container {
+/* .container {
     display: grid;
     grid-auto-flow: row;
     grid-template-areas:
@@ -37,7 +38,7 @@ a {
         "main main main aside"
         "footer footer footer footer";
 }
-
+ */
 
 
 /* .header {
@@ -55,12 +56,12 @@ a {
     height: 200px;
 } */
 
-.banner {
+/* .banner {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-}
+} */
 
 /* #heartagram {
     width: 150px;
@@ -82,7 +83,7 @@ a {
 
 
 
-.main {
+/* .main {
     grid-area: main;
     margin-top: 3%;
     width: 92%;
@@ -90,47 +91,47 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-}
+} */
 
-.main h1 {
+/* .main h1 {
     padding: 10px;
-}
+} */
 
-.contenedorSection {
+/* .contenedorSection {
     display: flex;
     flex-flow: row-reverse nowrap;
     padding: 10px;
     flex-direction: column;
     align-items: flex-start;
 }
+ */
 
-
-.contenedorSection img {
+/* .contenedorSection img {
     width: 370px;
     height: 100px;
-}
+} */
 
-.contenedorSection p {
+/* .contenedorSection p {
     margin-top: 3%;
-}
+} */
 
 #fotobio {
     height: 340px;
     width: 250px;
 }
 
-.aside {
+/* .aside {
     grid-area: aside;
     margin-top: 22%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
 }
+ */
 
 
 
-
-.footer {
+/* .footer {
     grid-area: footer;
     margin-top: 3%;
     background-color: black;
@@ -138,20 +139,20 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
-.footer ul {
+/* .footer ul {
     list-style: none;
     display: flex;
     width: 50%;
     justify-content: space-between;
     flex-direction: row;
-}
+} */
 
-.footer img {
+/* .footer img {
     width: 80px;
     height: 50px;
-}
+} */
 
 /* paleta de colores */
 /* {
@@ -212,16 +213,15 @@ form {
     padding: 16px 16px 16px 0px;
 }
 
-#sinLista {
-    display: none;
-}
 
-.contenedorHover{
+
+.contenedorHover {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.contenedorHover figure{
+
+.contenedorHover figure {
     position: relative;
     height: 250px;
     width: 350px;
@@ -230,70 +230,28 @@ form {
     cursor: pointer;
 }
 
-.contenedorHover figure img{
+.contenedorHover figure img {
     transition: all 500ms ease-out;
 }
-.contenedorHover figure .capa{
+
+.contenedorHover figure .capa {
     position: absolute;
     top: 0;
-/*     width: 100%;
-    height: 100%; */
     background: black;
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
     text-align: center;
 }
-.contenedorHover figure:hover > .capa{
+
+.contenedorHover figure:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
 
 
 @media screen and (max-width: 930px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
 
-    .container {
-        grid-template-areas:
-            "header header"
-            "main main"
-            "main main"
-            "aside aside"
-            "footer footer";
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    .header div {
-        margin: 0 auto;
-
-    }
-
-    #heartagram{
-        height: 80px;
-        width: auto;
-    }
-
-    .header nav ul {
-        display: flex;
-        list-style: none;
-        text-transform: uppercase;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .header nav ul li {
-        padding: 1%;
-        margin: 0 auto;
-    }
 
     .contenedorSection img {
         width: 180px;
@@ -306,21 +264,5 @@ form {
         padding: 10px;
         flex-direction: column;
         flex-wrap: wrap;
-    }
-
-    #sinLista {
-        display: none;
-    }
-
-
-}
-
-@media screen and (max-width: 1028px) and (min-width: 931px) {
-    #conLista {
-        display: none
-    }
-
-    #sinLista {
-        display: flex;
     }
 }
