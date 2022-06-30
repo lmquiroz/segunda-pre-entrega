@@ -1,0 +1,36 @@
+.header {
+    grid-area: header;
+    border-bottom: 1px solid #545448;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        width: 85%;
+
+        ul {
+            display: flex;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            text-transform: uppercase;
+
+            a {
+                &:hover {
+                    color: white;
+                    font-weight: 500;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+    #heartagram {
+        width: 150px;
+        height: 105px;
+    
+    }
+
+}
