@@ -1,0 +1,4 @@
+Se agregó la etiqueta meta para los keywords y para el description
+Se cambió el contenido de los Lorem en la página index y Biografia
+Se cambió el títulos de las páginas
+Se agregó scss a todo el sitio, incluyndo %extend y @mixin
