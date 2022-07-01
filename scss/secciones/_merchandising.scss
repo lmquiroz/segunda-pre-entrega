@@ -1,0 +1,37 @@
+.contenedorItems figure {
+    padding: 16px 16px 16px 0px;
+}
+
+.contenedorHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+        position: relative;
+        height: 250px;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 6px;
+        cursor: pointer;
+
+        img {
+            transition: all 500ms ease-out;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            background: black;
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        &:hover>.capa {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

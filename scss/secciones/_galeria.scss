@@ -1,0 +1,19 @@
+.contenedorItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    div{
+        margin: 1%;
+        p{
+            text-align: center;
+        }
+    }
+
+    img{
+        width: 200px;
+    height: 200px;
+    &:hover{
+        filter: saturate(200%);
+    }
+    }
+}

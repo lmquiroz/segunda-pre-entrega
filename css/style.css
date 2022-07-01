@@ -126,6 +126,10 @@ body {
     .main .contenedorSection p {
       margin-top: 3%; }
 
+#fotobio {
+  height: 340px;
+  width: 250px; }
+
 @media screen and (max-width: 930px) {
   .container {
     grid-template-areas: "header header" "main main" "main main" "aside aside" "footer footer"; }
@@ -135,121 +139,57 @@ body {
     padding: 10px;
     flex-direction: column;
     flex-wrap: wrap; }
+    .contenedorSection img {
+      width: 180px;
+      height: 60px; }
   #sinLista {
     display: none; } }
 
-/* body {
-    color: #8F8363;
-    background-color: #050504;
-    font-family: 'Roboto Flex', sans-serif;
-} */
-/* a {
-    text-decoration: none;
-    color: #8F8363;
-} */
-/* .container {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header header header header"
-        "main main main aside"
-        "main main main aside"
-        "main main main aside"
-        "footer footer footer footer";
-}
- */
-/* .header {
-    grid-area: header;
-    border-bottom: 1px solid #545448;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-/* .header img {
-    height: 200px;
-} */
-/* .banner {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
-} */
-/* #heartagram {
-    width: 150px;
-    height: 105px;
+.contenedorItems figure {
+  padding: 16px 16px 16px 0px; }
 
-}
+.contenedorHover {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contenedorHover figure {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer; }
+    .contenedorHover figure img {
+      transition: all 500ms ease-out; }
+    .contenedorHover figure .capa {
+      position: absolute;
+      top: 0;
+      background: black;
+      transition: all 500ms ease-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .contenedorHover figure:hover > .capa {
+      opacity: 1;
+      visibility: visible; }
 
-.header nav {
-    width: 85%;
-}
+.contenedorItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .contenedorItems div {
+    margin: 1%; }
+    .contenedorItems div p {
+      text-align: center; }
+  .contenedorItems img {
+    width: 200px;
+    height: 200px; }
+    .contenedorItems img:hover {
+      filter: saturate(200%); }
 
-.header nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    text-transform: uppercase;
-} */
-/* .main {
-    grid-area: main;
-    margin-top: 3%;
-    width: 92%;
-    margin-left: 3%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-} */
-/* .main h1 {
-    padding: 10px;
-} */
-/* .contenedorSection {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    padding: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-}
- */
-/* .contenedorSection img {
-    width: 370px;
-    height: 100px;
-} */
-/* .contenedorSection p {
-    margin-top: 3%;
-} */
-#fotobio {
-  height: 340px;
-  width: 250px; }
-
-/* .aside {
-    grid-area: aside;
-    margin-top: 22%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-}
- */
-/* .footer {
-    grid-area: footer;
-    margin-top: 3%;
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-} */
-/* .footer ul {
-    list-style: none;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    flex-direction: row;
-} */
-/* .footer img {
-    width: 80px;
-    height: 50px;
+/* #fotobio {
+    height: 340px;
+    width: 250px;
 } */
 /* paleta de colores */
 /* {
@@ -260,16 +200,6 @@ body {
     color: #BD952A;
 }
  */
-/* a:hover {
-    color: white;
-    font-weight: 500;
-    font-weight: bold;
-}
- */
-h1:hover {
-  color: white;
-  font-weight: 500; }
-
 /* estilo de algunas páginas */
 form {
   display: flex;
@@ -281,61 +211,55 @@ form {
 .botones {
   width: 150px; }
 
-.contenedorItems img {
-  width: 200px;
-  height: 200px;
-  /*   */ }
+/* .contenedorItems figure {
+    padding: 16px 16px 16px 0px;
+}
 
-.contenedorItems img:hover {
-  filter: saturate(200%); }
 
-.contenedorItems {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start; }
-
-.contenedorItems div p {
-  text-align: center; }
-
-.contenedorItems figure {
-  padding: 16px 16px 16px 0px; }
 
 .contenedorHover {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .contenedorHover figure {
-  position: relative;
-  height: 250px;
-  width: 350px;
-  overflow: hidden;
-  border-radius: 6px;
-  cursor: pointer; }
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 .contenedorHover figure img {
-  transition: all 500ms ease-out; }
+    transition: all 500ms ease-out;
+}
 
 .contenedorHover figure .capa {
-  position: absolute;
-  top: 0;
-  background: black;
-  transition: all 500ms ease-out;
-  opacity: 0;
-  visibility: hidden;
-  text-align: center; }
+    position: absolute;
+    top: 0;
+    background: black;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
 
-.contenedorHover figure:hover > .capa {
-  opacity: 1;
-  visibility: visible; }
-
+.contenedorHover figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+ */
 @media screen and (max-width: 930px) {
-  .contenedorSection img {
-    width: 180px;
-    height: 60px; }
-  .contenedorSection {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    padding: 10px;
-    flex-direction: column;
-    flex-wrap: wrap; } }
+  /*  .contenedorSection img {
+        width: 180px;
+        height: 60px;
+    } */
+  /* .contenedorSection {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        padding: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */ }
