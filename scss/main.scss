@@ -4,14 +4,15 @@
 }
 
 /* variables */
+@import './variables/tipografias';
 @import './variables/extend';
 @import './variables/mixins';
-@import './variables/tipografias';
+
 
 /* componentes */
 @import './componentes/body';
-@import './componentes/header';
 @import './componentes/aside';
+@import './componentes/header';
 @import './componentes/footer';
 
 /* paginas */
@@ -40,7 +41,7 @@
 
 
 /* estilo de algunas páginas */
-form {
+/* form {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -51,7 +52,7 @@ form {
 .botones {
     width: 150px;
 }
-
+ */
 
 
 /* .contenedorItems figure {
@@ -95,7 +96,7 @@ form {
 }
  */
 
-@media screen and (max-width: 930px) {
+/* @media screen and (max-width: 930px)  */
 
 
    /*  .contenedorSection img {
@@ -110,4 +111,3 @@ form {
         flex-direction: column;
         flex-wrap: wrap;
     } */
-}

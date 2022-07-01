@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 50%;
+    .botones {
+        width: 150px;
+        padding: 5px;
+        input{
+            @include color-andBg(white, black)
+        }
+    }
+}

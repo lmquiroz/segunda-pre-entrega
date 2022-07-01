@@ -1,0 +1,4 @@
+@mixin color-andBg($colorletra, $colorFondo){
+    color: $colorletra;
+    background-color: $colorFondo;
+}

@@ -8,7 +8,7 @@
     flex-wrap: nowrap;
 
     h1 {
-        padding: 10px;
+        @extend %estiloTitulo
     }
 
     .contenedorSection {
@@ -21,10 +21,11 @@
         img {
             width: 370px;
             height: 100px;
+            margin-bottom: 5px;
         }
 
         p {
-            margin-top: 3%;
+            @extend %estiloParrafo
         }
     }
 }
