@@ -19,7 +19,8 @@
 body {
   color: #8F8363;
   background-color: #050504;
-  font-family: 'Roboto Flex', sans-serif; }
+  font-family: 'Roboto Flex', sans-serif;
+  height: 100 vh; }
   body a {
     text-decoration: none;
     color: #8F8363; }
@@ -32,6 +33,24 @@ body {
 @media screen and (max-width: 930px) {
   .container {
     grid-template-areas: "header header" "main main" "main main" "aside aside" "footer footer"; } }
+
+.footer {
+  grid-area: footer;
+  margin-top: 3%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  .footer ul {
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    flex-direction: row; }
+  .footer img {
+    width: 80px;
+    height: 50px; }
 
 .aside {
   grid-area: aside;
@@ -93,24 +112,6 @@ body {
       .header nav ul li {
         padding: 1%;
         margin: 0 auto; } }
-
-.footer {
-  grid-area: footer;
-  margin-top: 3%;
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  .footer ul {
-    list-style: none;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    flex-direction: row; }
-  .footer img {
-    width: 80px;
-    height: 50px; }
 
 /* paginas */
 .main {
