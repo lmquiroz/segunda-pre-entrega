@@ -1,11 +1,13 @@
 .footer {
     grid-area: footer;
-    margin-top: 3%;
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     
     ul {
         list-style: none;

@@ -25,7 +25,8 @@
         }
 
         p {
-            @extend %estiloParrafo
+            @extend %estiloParrafo;
+        
         }
     }
 }
